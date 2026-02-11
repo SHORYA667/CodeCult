@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Cult</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #000;
+        color: #fff;
+      }
+
+      /* NAVBAR */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background: #0a0a0a;
+        border-bottom: 1px solid #1f1f1f;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+
+      .logo span {
+        color: #8a2be2;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #bbb;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover,
+      .nav-links .active {
+        color: #8a2be2;
+      }
+
+      .nav-right {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .btn {
+        padding: 8px 18px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .login {
+        background: #8a2be2;
+        color: #fff;
+      }
+
+      .dashboard {
+        background: #222;
+        color: #fff;
+      }
+
+      .profile {
+        width: 35px;
+        height: 35px;
+        background: #1e90ff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+      }
+
+      /* MAIN */
+      .container {
+        display: flex;
+        padding: 40px;
+      }
+
+      /* LEFT SIDE */
+      .left {
+        width: 20%;
+        padding-right: 20px;
+      }
+
+      .left h3 {
+        margin-bottom: 8px;
+      }
+
+      .left p {
+        font-size: 13px;
+        color: #aaa;
+        margin-bottom: 25px;
+      }
+
+      /* CENTER */
+      .center {
+        width: 55%;
+        text-align: center;
+      }
+
+      .center h1 {
+        font-size: 60px;
+        margin-bottom: 40px;
+      }
+
+      .red-dot {
+        color: red;
+      }
+
+      .search-box {
+        margin: 30px 0;
+      }
+
+      .search-box input {
+        padding: 12px;
+        width: 250px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+      }
+
+      .search-box button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        background: #8a2be2;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .ai-box {
+        margin-top: 40px;
+      }
+
+      .ai-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #00ffff;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #00ffff;
+      }
+
+      /* RIGHT SIDEBAR */
+      .right {
+        width: 25%;
+        padding-left: 20px;
+        border-left: 1px solid #1f1f1f;
+      }
+
+      .right input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        list-style: none;
+      }
+
+      .menu li {
+        padding: 10px 0;
+        color: #bbb;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .menu li:hover {
+        color: #8a2be2;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1000px) {
+        .container {
+          flex-direction: column;
+        }
+        .left,
+        .center,
+        .right {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="logo">CODE <span>CULT</span></div>
+
+      <div class="nav-links">
+        <a href="#" class="active">HOME</a>
+        <a href="#">DSA</a>
+        <a href="#">Reels</a>
+        <a href="#">Community</a>
+        <a href="#">About</a>
+      </div>
+
+      <div class="nav-right">
+        <button class="btn login">Login</button>
+        <button class="btn dashboard">Dashboard</button>
+        <div class="profile">S</div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <!-- LEFT -->
+      <div class="left">
+        <h3>👤 Unique User ID</h3>
+        <p>Every coder gets a public profile with stats.</p>
+
+        <h3>🏆 Achievements</h3>
+        <p>Badges, streaks & ranks for consistency.</p>
+
+        <h3>🎥 Coding Reels</h3>
+        <p>Short videos to learn & share coding.</p>
+      </div>
+
+      <!-- CENTER -->
+      <div class="center">
+        <h1>
+          Code <span class="red-dot">.</span> Compile
+          <span class="red-dot">.</span> Succeed
+        </h1>
+
+        <h2>SEARCH DEVELOPER BY ID</h2>
+
+        <div class="search-box">
+          <input type="text" id="devID" placeholder="ENTER ID" />
+          <button onclick="searchID()">SEARCH</button>
+        </div>
+
+        <div class="ai-box">
+          <div class="ai-circle">BYTE</div>
+          <h3>AI ASSISTANT</h3>
+          <p>The free, fun, and effective way to learn to code!</p>
+          <p>Feel free to ask anything</p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <input type="text" placeholder="🔍 Search" />
+
+        <ul class="menu">
+          <li>DSA Preparation</li>
+          <li>Articles</li>
+          <li>Tutorials</li>
+          <li>Practice Problems</li>
+          <li>Paste</li>
+          <li>Core Subject</li>
+          <li>Quick Compiler</li>
+          <li>Flex Fruit Box</li>
+          <li>Interview Experience</li>
+          <li>Need Help?</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function searchID() {
+        let id = document.getElementById("devID").value;
+
+        if (id === "") {
+          alert("Please enter Developer ID");
+        } else {
+          alert("Searching for Developer ID: " + id);
+        }
+      }
+    </script>
+  </body>
+</html>
